@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<title>추모영상</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+
+	<style>
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } body {line-height: 1; } ol, ul {list-style: none; } blockquote, q {quotes: none; } blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; } table {border-collapse: collapse; border-spacing: 0; }
+		.clearfix:after{content:''; display: block; float:none; clear:both;}
+		.clearfix>*{float:left;}
+
+		body{background-color:#000000;color:#070404;font-weight:500;font-family: 'Oswald', 'NanumGothic', sans-serif;}
+		a{color:white;text-decoration: none;}
+		.wrapper{max-width:1800px; margin:0 auto;}
+
+		/* 헤더 */
+		#header{border-bottom:1px solid #ffffff;}
+		#header>.wrapper{display: flex; justify-content: space-between;}
+		#header a{font-size: 23px; letter-spacing: 0.1vw; padding: 15px 2%; transition: all 0.1s; transition: all ease 0.1s; color: #ffffff;}
+		#header a:hover{color:#777;}
+		#header a.home{position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
+
+
+	
+
+
+		/* 메뉴 */
+		.menu_wrap{}
+		.menu_wrap>.row{padding: 0 2% 2%; white-space: nowrap;}
+		.menu_wrap>.row.list{padding-bottom: 1%;}
+		.menu_wrap>.row:after{content:''; display: block; float:none; clear: both;}
+		.menu_wrap>.row>a{display:block;position:relative;float:left;box-sizing: border-box;text-align: center;}
+
+		.menu_wrap>.row>.col1{margin-right: width: 100%;}
+
+		.menu_wrap>.row>.col3{margin-right: 1%; width:32.66%;}
+		.menu_wrap>.row>.col3:last-of-type{margin-right: 0;}
+
+		.menu_wrap>.row>.col4{margin-right: 1%; width:24.25%;}
+		.menu_wrap>.row>.col4:last-of-type{margin-right: 0;}
+
+		.menu_wrap>.row>a>img{width:100%;}
+		.menu_wrap>.row>.detail{font-size: 1.04vw; letter-spacing: -0.02rem; line-height: 1.6; white-space: normal;}
+
+		/* 메뉴 각각 지정 */
+		.menu_wrap>.row>.menu01{padding: 2% 0 0; width: 100%;}
+		.menu_wrap>.row>.menu01 video{width: 100%;}
+
+
+
+		
+
+		@media(min-width:1700px){
+		  #top_year{font-size:390px;}
+		}
+		@media(max-width:800px){
+			#top_year{-webkit-background-size: 4vw auto; background-size: 4vw auto;}
+			.menu_wrap>.row>a>.number{font-size: 5vw;}
+		  #header a{font-size: 18px;}
+			.swiper-button-next,
+			.swiper-button-prev{width: 3vw; height: 5.5vw; -webkit-background-size: 3vw auto; background-size: 3vw auto;}
+		}
+	</style>
+
+  <script type="text/javascript" src="../js/swiper.min.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="wrapper">
+			<a href="https://www.instagram.com/___j_eun/?hl=ko">INSTAGRAM</a>
+			<a href="https://yoon-funeral.netlify.app" class="home">HOME</a>
+			<a href="https://funeral-about.netlify.app">ABOUT</a>
+		</div>
+	</header>
+	
+
+	<div class="menu_wrap">
+		<div class="row wrapper">
+			<div href="#" class="col1 menu01">
+				<video autoplay  loop>
+					<source src="funeral mov.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
